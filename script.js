@@ -11,7 +11,7 @@ currMonth = date.getMonth();
 const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
 const renderCalender = () =>{
-    let firstDayofMonth = new Date(currYear,currMonth ,1).getDate(),
+    let firstDayofMonth = new Date(currYear,currMonth ,1).getDay(),
     lastDateOfMonth = new Date(currYear,currMonth + 1,0).getDate(),
     lastDayOfMonth = new Date(currYear,currMonth,lastDateOfMonth).getDay(),
     lastDateOfLastMonth = new Date(currYear,currMonth ,0).getDate();
